@@ -1,14 +1,9 @@
 # Local SDK development
 
-We have two example projects, which can be used to test the latest SDK release, as well as new changes to the SDK.
+When developing the SDK locally, you can enable the SDK to rebuild "on save" by running `npm run dev`.
 
-- [discord-activity-starter](/examples/discord-activity-starter) is a minimal application example
-- [sdk-playground](/examples/sdk-playground) is a playground for testing any SDK functionality
+We recommend testing changes to the SDK against the SDK-Playground example, which can be found [here](https://github.com/discord/embedded-app-sdk-examples/tree/main/sdk-playground#testing-sdk-changes-locally).
 
-These projects consume this repo's root `@discord/embedded-app-sdk` directly via [pnpm workspaces](https://pnpm.io/workspaces)
+## JSON Schema updates
 
-To test changes to the SDK, locally, with either of these projects, you must do the following:
-
-1. From terminal, navigate to the root of either project's directory, (i.e. examples/discord-application-start or examples/sdk-playground)
-2. Start up the example's web server with `pnpm dev`.
-3. In another terminal, start up the SDK's development pipeline with `pnpm dev` from the root of the repository.
+If you need to update any generated JSON schema values, follow the guide [here](/docs/schema-gen.md).
